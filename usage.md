@@ -1,4 +1,4 @@
-# general Docker usage
+# General Docker usage
 
 * docker run
 * docker start
@@ -8,6 +8,9 @@
 * docker rm1
 * docker inspect
 * docker attach
-* docker events 
-* docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
+* docker events
 
+## Useful procedures
+* docker stop
+* docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
+* docker up -d
