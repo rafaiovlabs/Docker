@@ -1,0 +1,12 @@
+# general Docker usage
+
+* docker run
+* docker start
+* docker ps
+* docker images
+* docker rm
+* docker rm1
+* docker inspect
+* docker attach
+* docker events 
+
