@@ -15,3 +15,6 @@
 * docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
 * docker up -d
 * on docker compose images should have the smae hash. check with docker images
+* docker images |grep name ofprojectorcontainer
+8 docker rmi tagdeapp
+
