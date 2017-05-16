@@ -22,9 +22,24 @@
 * $> dc stop
 * $> docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
 * $> docker images | grep delivery
-* $> docker rmi clarodelivery_clarodelivery-celery-worker-prod
-* $> docker rmi clarodelivery_clarodelivery-celery-beat-prod
-* $> docker rmi clarodelivery_clarodelivery-celery-worker-dataimporter-prod
+* $> docker rmi delivery_delivery-celery-worker-prod
+* $> docker rmi delivery_delivery-celery-beat-prod
+* $> docker rmi delivery_delivery-celery-worker-dataimporter-prod
 * $> dc up -d
 * $> dc ps
 * $> ./00-deploy.sh prod
+#### on tests
+* dct build --no-cache clarodelivery-test-django
+* dct stop
+* docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
+* docker images | grep delivery
+* docker rmi clarodelivery_clarodelivery-test-celery-beat
+* docker rmi clarodelivery_clarodelivery-test-celery-worker-dataimporter
+* docker rmi clarodelivery_clarodelivery-test-celery-worker
+* dct up -d
+* dct ps 
+* ./00-deploy.sh test
+
+
+
+
