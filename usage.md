@@ -38,6 +38,7 @@
 * docker rmi clarodelivery_clarodelivery-test-celery-worker
 * dct up -d
 * dct ps 
+* ./00-deploy.sh test
 
 ### iptables error
 
@@ -46,7 +47,6 @@ ERROR: Encountered errors while bringing up the project.
 * $> iptable -F
 * $> systemctl stop / start docker
 
-* ./00-deploy.sh test
 
 
 
