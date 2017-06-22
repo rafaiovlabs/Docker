@@ -48,6 +48,8 @@ ERROR: Encountered errors while bringing up the project.
 * $> systemctl stop / start docker
 
 
+# list of projects by container 
 
+* docker ps --format '{{.Names}}' | cut -d'_' -f1 | sort | uniq
 
 
