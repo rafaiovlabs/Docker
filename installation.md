@@ -9,9 +9,11 @@
 * $ systemctl start docker.service
 
 
-#!/usr/bin/env bash
+
 # docker instalation in a Linux OS
 
+```
+#!/usr/bin/env bash
 GREEN="$(tput setaf 2)"
 RESET="$(tput sgr0)"
 
@@ -51,3 +53,4 @@ docker ps -a --format "{{.Names}}" | xargs -i docker rm '{}'
 docker rmi hello-world
 
 echo "==> ${GREEN}ALL DONE ! ${RESET} (8/8)"
+```
