@@ -47,9 +47,16 @@ ERROR: Encountered errors while bringing up the project.
 * $> iptable -F
 * $> systemctl stop / start docker
 
-
-# list of projects by container 
+# List of projects by container 
 
 * docker ps --format '{{.Names}}' | cut -d'_' -f1 | sort | uniq
+
+# VIEW STATS FOR A RUNNING PROJECT:
+ $> docker stats $(docker ps|grep -v "NAMES" | grep __PROJECTNAME__ |awk '{ print $NF }'|tr "\n" " ")
+
+# REMOVE ALL SNAPSHOTS FOR A GIVEN PROJECT:
+ $> docker ps -a |  grep -i $( echo ${PWD##*/} | sed 's%_%%g') | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
+
+
 
 
