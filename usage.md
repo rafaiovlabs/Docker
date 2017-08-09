@@ -17,6 +17,7 @@
 * on docker compose images should have the smae hash. check with docker images
 * docker images |grep name ofprojectorcontainer
 * docker rmi tagdeapp
+
 ### Deploy with new python req
 * $> dc build --no-cache clarodelivery-django-prod
 * $> dc stop
@@ -58,6 +59,7 @@ ERROR: Encountered errors while bringing up the project.
 ### Remove all snapshots for a given project:
  $> docker ps -a |  grep -i $( echo ${PWD##*/} | sed 's%_%%g') | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
 
-
+## Remove all "none" docker images from server
+* docker images |grep none|awk '{print $3}'| args -i docker rmi '{}'
 
 
