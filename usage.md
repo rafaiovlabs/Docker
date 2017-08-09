@@ -60,6 +60,6 @@ ERROR: Encountered errors while bringing up the project.
  $> docker ps -a |  grep -i $( echo ${PWD##*/} | sed 's%_%%g') | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
 
 ## Remove all "none" docker images from server
-* docker images |grep none|awk '{print $3}'| args -i docker rmi '{}'
+* docker images |grep none|awk '{print $3}'| xargs -i docker rmi '{}'
 
 
