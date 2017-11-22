@@ -1,3 +1,4 @@
+
 # General Docker usage
 
 * docker run
@@ -17,6 +18,9 @@
 * on docker compose images should have the smae hash. check with docker images
 * docker images |grep name ofprojectorcontainer
 * docker rmi tagdeapp
+### when a container is exited with error
+* docker run CONTAINER /bin/bash
+* docker run CONTAINER 
 
 ### Deploy with new python req
 * $> dc build --no-cache clarodelivery-django-prod
@@ -30,7 +34,7 @@
 * $> dc up -d
 * $> dc ps
 * $> ./00-deploy.sh prod
-#### on tests
+#### On tests
 * dct build --no-cache clarodelivery-test-django
 * dct stop
 * docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
