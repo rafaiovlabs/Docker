@@ -66,6 +66,9 @@ ERROR: Encountered errors while bringing up the project.
 ## Remove all "none" docker images from server
 * docker images |grep none|awk '{print $3}'| xargs -i docker rmi '{}'
 
+## remove docker processes.
+* docker stop  01630a27dae6  #hash ok docker ps  
+
 ## knowing space used by containers 
 
 * docker ps --format "{{.ID}}" | xargs -i docker inspect '{}' | grep "json.log" | cut -d'"' -f4 | xargs -i du -sch '{}' | grep -v total | grep -v ^0 | grep -v ^4.0K
