@@ -76,7 +76,7 @@ ERROR: Encountered errors while bringing up the project.
 
 
 ## dct build on container 
-## change settings
+## change settings (database and rabbit)
 ## dct stop 
 ## rm exited containers.
 ## dct rmi other containers
