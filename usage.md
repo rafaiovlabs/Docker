@@ -75,3 +75,10 @@ ERROR: Encountered errors while bringing up the project.
 * docker ps |grep hashnumber
 
 
+## dct build on container 
+## change settings
+## dct stop 
+## dct rmi other containers
+## dct up -d
+
+
