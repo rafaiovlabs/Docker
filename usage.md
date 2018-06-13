@@ -78,6 +78,7 @@ ERROR: Encountered errors while bringing up the project.
 ## dct build on container 
 ## change settings
 ## dct stop 
+## rm exited containers.
 ## dct rmi other containers
 ## dct up -d
 
