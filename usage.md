@@ -23,7 +23,7 @@
 * docker run CONTAINER 
 
 ### Deploy with new python req
-* $> dc build --no-cache clarodelivery-django-prod
+* $> dc build --no-cache clarodelivery-django-prod   (docker-compose = dc this is aliased) 
 * $> dc stop
 * $> docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
 * $> docker images | grep delivery
