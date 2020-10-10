@@ -11,6 +11,9 @@
 * docker attach
 * docker events
 
+## Docker login
+* Use docker login to login to specific registrys and or artfactories.
+
 ## Useful procedures
 * docker stop
 * docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
