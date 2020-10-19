@@ -2,6 +2,7 @@
 
 
 * Docker info, scripts and development
+* need to add docker arquitechture here. 
 
 
 ## References 
