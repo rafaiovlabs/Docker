@@ -29,8 +29,8 @@
 * $> dc build --no-cache clarodelivery-django-prod   (docker-compose = dc this is aliased) 
 * $> dc stop
 * $> docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
-* $> docker images | grep delivery
-* $> docker images | grep zinalat
+* $> docker images | grep servicename-example1
+* $> docker images | grep servicename-example2
 * $> docker rmi delivery_delivery-celery-worker-prod
 * $> docker rmi delivery_delivery-celery-beat-prod
 * $> docker rmi delivery_delivery-celery-worker-dataimporter-prod #erase all minus initial image build. 
