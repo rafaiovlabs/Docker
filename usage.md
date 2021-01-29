@@ -77,6 +77,9 @@ ERROR: Encountered errors while bringing up the project.
 * docker ps --format "{{.ID}}" | xargs -i docker inspect '{}' | grep "json.log" | cut -d'"' -f4 | xargs -i du -sch '{}' | grep -v total | grep -v ^0 | grep -v ^4.0K
 * docker ps |grep hashnumber
 
+## docker-compose 
+* sudo docker-compose down && sudo docker-compose up -d
+* sudo docker-compose down && sudo docker-compose up --force-build -d
 
 ## dct build on container 
 ## change settings (database and rabbit)
