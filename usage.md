@@ -38,7 +38,7 @@
 * $> dc ps
 * $> ./00-deploy.sh prod
 #### On tests
-* dct build --no-cache clarodelivery-test-django
+* dct build --no-cache clarodelivery-test-django. (dct is an alias off docker-compose) 
 * dct stop
 * docker ps -a | grep -i ${PWD##*/} | grep -i exited | awk '{print $1}' | xargs -i docker rm '{}'
 * docker images | grep delivery
