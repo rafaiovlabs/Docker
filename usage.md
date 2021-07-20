@@ -72,6 +72,10 @@ ERROR: Encountered errors while bringing up the project.
 ## remove docker processes.
 * docker stop  01630a27dae6  #hash ok docker ps  
 
+## remove network definitions
+* docker network ls 
+* docker network rm "hash"
+
 ## knowing space used by containers 
 
 * docker ps --format "{{.ID}}" | xargs -i docker inspect '{}' | grep "json.log" | cut -d'"' -f4 | xargs -i du -sch '{}' | grep -v total | grep -v ^0 | grep -v ^4.0K
