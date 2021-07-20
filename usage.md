@@ -12,7 +12,7 @@
 * docker events
 
 ## Docker login
-* Use docker login to login to specific registrys and or artfactories.
+* Use docker login to login to specific registries and or artfactories.
 
 ## Useful procedures
 * docker stop
