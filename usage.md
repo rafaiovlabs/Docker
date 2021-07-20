@@ -37,6 +37,7 @@
 * $> dc up -d
 * $> dc ps
 * $> ./00-deploy.sh prod
+* 
 #### On tests
 * dct build --no-cache clarodelivery-test-django
 * dct stop
@@ -71,6 +72,10 @@ ERROR: Encountered errors while bringing up the project.
 
 ## remove docker processes.
 * docker stop  01630a27dae6  #hash ok docker ps  
+
+## remove network defintions
+* docker network ls
+* docker network rm "hash"
 
 ## knowing space used by containers 
 
