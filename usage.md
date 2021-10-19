@@ -27,6 +27,14 @@
 ### when a container is exited with error
 * docker run CONTAINER /bin/bash
 * docker run CONTAINER 
+* docker run -a STDIN  CONTAINER ls
+
+### Running comands in a single container (not exited)
+
+* docker exec -u 0 <container> <command>
+* docker exec <container> bash -c "command1 ; command2 ; command3"
+* docker exec -w /path/to/directory <container> <command>
+
 
 ### Deploy with new python req
 * $> dc build --no-cache clarodelivery-django-prod   (docker-compose = dc this is aliased) 
