@@ -16,6 +16,7 @@
 
 ## Clean docker space
 * docker system prune 
+* docker system prune -f (w/o interaction)
 
 ## Useful procedures
 * docker stop
@@ -24,6 +25,7 @@
 * on docker compose images should have the smae hash. check with docker images
 * docker images |grep name ofprojectorcontainer
 * docker rmi tagdeapp
+
 ### when a container is exited with error
 * docker run CONTAINER /bin/bash
 * docker run CONTAINER 
