@@ -33,7 +33,7 @@
 
 ### Running comands in a single container (not exited)
 
-* docker exec -u 0 <container> <command>
+* docker exec -u 0 container command
 * docker exec <container> bash -c "command1 ; command2 ; command3"
 * docker exec -w /path/to/directory <container> <command>
 
