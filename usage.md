@@ -98,11 +98,4 @@ ERROR: Encountered errors while bringing up the project.
 * sudo docker-compose down && sudo docker-compose up -d
 * sudo docker-compose down && sudo docker-compose up --force-build -d
 
-## dct build on container 
-## change settings (Service and databse settings)
-## dct stop 
-## rm exited containers.
-## dct rmi other containers
-## dct up -d
-
 
